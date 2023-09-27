@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <title>Lab 1</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 10px;
+        }
+
+        .mrb {
+            margin-bottom: 20px;
+        }
+
+        .bg-gray {
+            background-color: gray;
+        }
+
+        .bg-yello {
+            background-color: yellow;
+        }
+
+        .bd-double {
+            border: 3px double black;
+        }
+
+        .bd-solid {
+            border: 2px solid black;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .flex-basic-full {
+            flex-basis: 100%;
+        }
+
+        .ex_1_body_left {
+            flex-basis: auto;
+            padding-bottom: 50px;
+            padding-right: 20px;
+        }
+
+        .ex_1_body_left_list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ex_2, .ex_3, .ex_1_footer {
+            text-align: center;
+        }
+
+        .ex_2_head, .ex_2_nav, .ex_2_footer {
+            padding: 10px 0 10px 0;
+        }
+
+        .ex_2_body * {
+            padding: 40px 0 40px 0;
+        }
+
+        .ex_2_body_index {
+            padding: 40px 20px 40px 20px;
+        }
+
+        .ex_3_head {
+            background-color: chocolate;
+            padding: 29.5px 0 29.5px 0;
+            margin-bottom: 10px;
+        }
+
+        .ex_3_logo {
+            padding: 160.5px 0 160.5px 0;
+        }
+
+        .ex_3_body_container {
+            display: grid;
+            grid-template-columns: 180px 180px 180px;
+            grid-template-rows: 220px 220px;
+            grid-template-rows: 220px 220px;
+            justify-content: center;
+        }
+
+        .ex_3_body_container_card {
+            margin: 10px;
+        }
+
+        .ex_3_footer {
+            background-color: dodgerblue;
+        }
+    </style>
+
+    <div id='root'>
+        <div class='ex_1 bd-double mrb'>
+            <div class='ex_1_head bg-gray'>
+                <h1>PROCESS LAYOUT EXAMPLE</h1>
+            </div>
+            
+            <div class='ex_1_body bd-double d-flex'>
+                <div class='ex_1_body_left bg-yello bd-double'>
+                    <h3>Main menu</h3>
+                    <ul class="ex_1_body_left_list">
+                        <li>Link one</li>
+                        <li>Link two</li>
+                        <li>Link three</li>
+                        <li>Link four</li>
+                    </ul>
+                </div>
+                
+                <div class='ex_1_body_right bd-double flex-basic-full'>
+                    <p>This is an example layout using the tables</p>
+                </div>
+            </div>
+            
+            <div class='ex_1_footer bg-gray bd-double'>
+                <p>www.Example of layout using tables.com</p>
+            </div>
+        </div>
+        
+        <div class='ex_2 mrb'>
+            <header class="ex_2_head bd-solid">
+                <h1>Header Section</h1>
+            </header>
+
+            <nav class="ex_2_nav bd-solid">
+                <h1>Navigation Bar</h1>
+            </nav>
+
+            <section class="ex_2_body d-flex">
+                <div class="ex_2_body_index bd-solid">
+                    <h1>Index</h1>
+                </div>
+
+                <div class="ex_2_body bd-solid flex-basic-full">
+                    <h1>Content section</h1>
+                </div>
+            </section>
+
+            <footer class="bd-solid">
+                <h1>Footer section</h1>
+            </footer>
+        </div>
+        
+        <div class='ex_3 mrb'>
+            <header class="ex_3_head bd-solid">
+                <h1>Header section</h1>
+                <h3>900px-120px</h3>
+            </header>
+
+            <div class="ex_3_logo bd-solid bg-gray">
+                <h1>Company Image</h1>
+                <h3>900px-400px</h3>
+                <p>design by - gdatamart.com</p>
+            </div>
+
+            <div class="ex_3_body">
+                <h1>Our Services</h1>
+
+                <div class="ex_3_body_container">
+                    <span class="ex_3_body_container_card bg-gray">
+                        <h3>services</h3>
+                        <p>wight:180px height:220px</p>
+                    </span>
+
+                    <span class="ex_3_body_container_card bg-gray">
+                        <h3>services</h3>
+                    </span>
+
+                    <span class="ex_3_body_container_card bg-gray">
+                        <h3>services</h3>
+                    </span>
+
+                    <span class="ex_3_body_container_card bg-gray"></span>
+                    <span class="ex_3_body_container_card bg-gray"></span>
+                    <span class="ex_3_body_container_card bg-gray"></span>
+                </div>
+            </div>
+
+            <footer class="ex_3_footer">
+                <h1> Footer section</h1>
+                <h3>900px-120px</h3>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./assest/js/action.js"></script>
+</body>
+</html>
