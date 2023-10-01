@@ -1,0 +1,483 @@
+:root {
+    --width: 1000px;
+    --color-orange: rgb(247 120 37);
+    --color-blue: rgb(45 192 232);
+    --fsize-normal: 18x;
+    --fsize-sumary: 20px;
+    --fsize-title: 22px;
+    --fsize-label: 28px;
+    --fsize-max: 40px;
+    --color-bg: rgb(238 238 238);
+    --color-bg-footer: rgb(25 25 25);
+    --color-text: rgb(127 127 127);
+    --color-gray: #7f7f7f;
+    --color-input: rgb(21 21 21);
+    --color-btn: rgb(24 94 218);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--fsize-normal);
+}
+
+a,
+button,
+a span {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-orange);
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: var(--width);
+    margin: auto;
+    display: flex;
+}
+
+#section_text_2 {
+    padding: 30px 0;
+}
+
+.eight {
+    flex-grow: 8;
+}
+
+.right_text {
+    text-align: right;
+}
+
+.bold_text {
+    font-weight: 700;
+}
+
+.pix_button {
+    padding: 10px 28px;
+    border-radius: 3px;
+}
+
+#section_header_1,
+#section_gym_4,
+.containerss,
+.navbar-nav,
+.propClone,
+.propClone a,
+.pi,
+.fa-brands,
+.bottom-icons,
+.bottom-icons li,
+.header_style,
+.gym_life,
+.gym_life .container,
+.gym_life .top_padding,
+.img_gym_st,
+.carousel-indicators li.active,
+.gym_st,
+.gym_text,
+.gym_st span,
+.gym_text span {
+    background-color: white;
+}
+
+#section_header_1 {
+    margin-bottom: 50px;
+}
+
+.navbar-header {
+    display: none;
+}
+
+.containerss {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: var(--width);
+}
+
+.navbar-nav,
+.bottom-icons {
+    display: flex;
+}
+
+.propClone a {
+    color: var(--color-text);
+}
+
+.propClone {
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+.header_style {
+    padding: 30px 0;
+}
+
+.bottom-icons li {
+    margin-left: 30px;
+}
+
+#section_slider {
+    margin-bottom: 50px;
+}
+
+.item {
+    display: none;
+    position: relative;
+}
+
+.active {
+    display: block;
+}
+
+.item img {
+    width: var(--width);
+    height: 468px;
+    border-radius: 5px;
+    filter: brightness(90%) drop-shadow(0 0 0.75rem black);
+}
+
+.item .carousel-caption,
+.item .carousel-caption h3,
+.item .carousel-caption p {
+    background-color: transparent;
+    color: white;
+}
+
+.item .carousel-caption {
+    position: absolute;
+    top: 80%;
+    left: 2%;
+}
+
+.item .carousel-caption h3 {
+    font-size: var(--fsize-label);
+}
+
+.item .carousel-caption p {
+    font-size: var(--fsize-sumary);
+}
+
+#myCarousel {
+    position: relative;
+}
+
+.carousel-indicators li {
+    background-color: var(--color-text);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+    top: 4%;
+    right: 2%;
+    display: flex;
+}
+
+.fui-arrow-left {
+    left: 2%;
+}
+
+.fui-arrow-left,
+.fui-arrow-right {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    background-color: transparent;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fui-arrow-left i,
+.fui-arrow-right i {
+    background-color: transparent;
+    font-size: var(--fsize-label);
+}
+
+.fui-arrow-right {
+    right: 2%;
+}
+
+#section_gym_4 {
+    margin: 50px 0 20px;
+}
+
+.gym_life .columns.sixteen .top_padding {
+    display: flex;
+    flex-grow: 16;
+    flex-direction: row;
+    width: 100%;
+}
+
+.gym_life {
+    padding: 50px 0 20px;
+}
+
+.one-third {
+    flex-basis: calc(100% / 3);
+}
+
+.img_gym_st .logo_style {
+    border-radius: 50%;
+    background-color: white
+}
+
+.part_st {
+    text-align: center;
+    background-color: white;
+}
+
+.text_gym_style .gym_st .editContent {
+    color: black;
+    font-weight: 700;
+    font-size: var(--fsize-sumary);
+}
+
+.text_gym_style .gym_st {
+    margin: 20px 0;
+}
+
+.text_gym_style .gym_text {
+    padding: 0 50px;
+}
+
+.text_gym_style {
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.link_3_btn .pix_text {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#section_intro_title {
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.flat_pricing {
+    background-color: white;
+    border: 2px solid var(--color-gray);
+    text-align: center;
+    margin: 0 20px;
+    padding: 30px 0 50px;
+}
+
+.flat_pricing .editContent,
+.flat_pricing_list,
+.flat_pricing_list .pix_text {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.flat_pricing_list {
+    margin-bottom: 50px;
+}
+
+.flat_pricing .editContent:first-child {
+    margin-bottom: 0;
+}
+
+.flat_pricing .editContent:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.flat_pricing strong {
+    background-color: white;
+}
+
+.blue_text strong {
+    color: var(--color-blue);
+    font-size: var(--fsize-max);
+}
+
+.orange strong {
+    color: var(--color-orange);
+    font-size: var(--fsize-max);
+}
+
+.btn_big {
+    padding: 15px 25px;
+}
+
+.blue_bg,
+.blue_bg span {
+    background-color: var(--color-blue);
+}
+
+.flat_pricing .pix_button {
+    margin-bottom: 20px;
+}
+
+#section_party_3 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+#section_party_3,
+.subscribe,
+#section_party_3 .container {
+    background-color: var(--color-bg-footer);
+}
+
+.text_input,
+.confirm_page {
+    background-color: var(--color-input);
+}
+
+.confirm_text {
+    display: none;
+}
+
+.text_input {
+    width: 400px;
+    text-align: center;
+    background-color: var(--color-input);
+}
+
+#section_party_3 .container .columns {
+    margin: auto;
+    background-color: var(--color-input);
+}
+
+.headtext_style {
+    margin: 30px 0 20px;
+    background-color: var(--color-input);
+}
+
+.headtext_style .pix_text {
+    color: white;
+    font-size: var(--fsize-title);
+}
+
+#section_party_3 .editContent,
+#section_party_3 .pix_text {
+    background-color: var(--color-input);
+}
+
+.editContent .subtext_style {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.contact_st {
+    margin: auto;
+}
+
+#contact_form {
+    background-color: var(--color-input);
+}
+
+.contact_st #name,
+.contact_st #email {
+    background-color: white;
+    padding: 15px 5px;
+    margin: auto;
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 2px;
+}
+
+.subtext_style {
+    width: 300px;
+    background-color: var(--color-input);
+}
+
+#submit_btn_15.subscribe_btn.pix_text {
+    width: 93%;
+    background-image: linear-gradient(0, var(--color-btn), var(--color-blue));
+    margin: auto;
+    border: none;
+    padding: 15px 5px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+#submit_btn_15.subscribe_btn .editContent {
+    background-color: transparent;
+    color: white;
+}
+
+.segment.pix_builder_bg {
+    background-color: var(--color-input);
+}
+
+#hidden_pix_15 {
+    display: none;
+}
+
+.segment.pix_builder_bg::after {
+    content: "";
+    display: block;
+    color: var(--color-btn);
+    background-color: var(--color-blue);
+    width: 80px;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#section_party_4,
+#section_party_4 .pix_text,
+#section_party_4 .container,
+#section_party_4 .likes_st,
+.foot_st,
+#section_party_4 span,
+#section_party_4 ul,
+#section_party_4 ul li,
+#section_party_4 ul li a,
+#section_party_4 ul li a i {
+    background-color: var(--color-input);
+}
+
+#section_party_4 {
+    padding: 20px 0;
+}
+
+#section_party_4 .sixteen.columns {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    background-color: var(--color-input);
+}
+
+#section_party_4 .columns .socbuttons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.seven {
+    flex-basis: 7;
+    background-color: var(--color-input);
+}
+
+.nine {
+    flex-basis: 9;
+    background-color: var(--color-input);
+}
+
+#section_party_4 .columns.alpha {
+    margin-right: 140px;
+    background-color: var(--color-input);
+}
+
+.pixfort_st {
+    color: var(--color-blue);
+}
