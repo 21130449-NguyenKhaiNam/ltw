@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Lab 3_files/all.min.css">
+    <link rel="stylesheet" href="./Lab 3_files/style.css">
+    <title>Lab 3</title>
+</head>
+
+<body>
+    <div id="root">
+        <!-- Menu -->
+        <div class="container">
+            <ul class="menu">
+                <li class="menu-item">HOME</li>
+                <li class="menu-item">
+                    PRODUCTS
+                    <ul class="drop_menu">
+                        <li class="drop_menu-item">Tivi</li>
+                        <hr>
+                        <li class="drop_menu-item">Máy tính xách tay</li>
+                        <hr>
+                    </ul>
+                </li>
+                <li class="menu-item">ABOUT</li>
+                <li class="menu-item"><a href="http://127.0.0.1:5500/#form">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <!-- Form 1 -->
+        <div class="container bg-gray">
+            <form action="http://127.0.0.1:5500/#" id="form">
+                <table class="table">
+                    <thead>
+                        <tr><th>
+                            <h1 class="form-head">Contact Us</h1>
+                        </th>
+                    </tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label for="name">FULL NAME *</label>
+                                    <input type="text" name="name" placeholder="Enter Your Name" required="">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="d-g-2 col-2">
+                            <td>
+                                <div class="form-group">
+                                    <label for="email">EMAIL *</label>
+                                    <input type="email" name="email" placeholder="Enter Your Email" required="">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="form-group">
+                                    <label for="phone">PHONE</label>
+                                    <input type="number" name="phone" placeholder="Enter Your Phone">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label for="services">NEEDED SERVICES *</label>
+                                    <select name="services">
+                                        <option value="One">One</option>
+                                        <option value="Two">Two</option>
+                                        <option value="Three">Three</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label for="textarea">NEEDED SERVICES *</label>
+                                    <textarea name="textarea" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="submit btn" type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+        <!-- Form 2 -->
+        <div class="container">
+            <img src="http://127.0.0.1:5500/assests/img/background.jpg" alt="background" class="background">
+            <form action="http://127.0.0.1:5500/#" id="form-2">
+                <table class="table">
+                    <thead>
+                        <tr><th>
+                            <h1 class="form-head">Sign In</h1>
+                        </th>
+                    </tr></thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" placeholder="username or email">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="password" placeholder="password">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="submit btn" type="submit">SIGN IN</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="nav-social">
+                                    <p>Or login with</p>
+                                    <div>
+                                        <ul class="group-icon">
+                                            <li><a href="http://127.0.0.1:5500/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="http://127.0.0.1:5500/"><i class="fa-brands fa-google"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="m-t m-b">
+                                    <a href="http://127.0.0.1:5500/#">Sign Up</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+        <!-- Form 3 -->
+        <div class="container bg-gray">
+            <form action="http://127.0.0.1:5500/#" id="form-3">
+                <table class="table">
+                    <thead>
+                        <tr><th>
+                            <h1>Account</h1>
+                        </th>
+
+                    </tr></thead><tbody>
+                        <tr>
+                            <td>
+                                <div class="group-input">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <input type="text" placeholder="Full Name">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="group-input">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="Email Adress">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="group-input">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input type="password" placeholder="Password">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+
+                <table class="table">
+                    <thead>
+                        <tr><th>
+                            <h1>Date of Birth</h1>
+                        </th>
+
+                        <th>
+                            <h1>Gender</h1>
+                        </th>
+                    </tr></thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="group-select">
+                                    <button>DD</button>
+                                    <button>MM</button>
+                                    <button>YYYY</button>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="group-select">
+                                    <button class="gender">Male</button>
+                                    <button class="gender">Male</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <thead>
+                        <tr><th>
+                            <h1>Payment Details</h1>
+                        </th>
+                    </tr></thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="group-input special none">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <p>Creadit Card</p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="group-input special none">
+                                    <i class="fa-brands fa-cc-paypal"></i>
+                                    <p>Paypal</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="group-input special card-number">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <input type="text" placeholder="Card Number">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="group-input special">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <input type="text" placeholder="Card CVC">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="group-input special none nope">
+                                    <select name="" id="">
+                                        <option value="01 Jan">01 Jan</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="2015">2015</option>
+                                    </select>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr><th>
+                            <h1>Terms and Conditions</h1>
+                        </th>
+                    </tr></thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="group-terms">
+                                    <input type="checkbox">
+                                    <p class="terms"> I accept the terms and conditions for signing up to this service, and hereby
+                                        confirm
+                                        I have read privacy policy.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
