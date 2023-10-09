@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     var $ = document.querySelector.bind(document)
     var $$ = document.querySelectorAll.bind(document)
-    var root = $('#root')
+    var root = $('#root4')
 
     var callFuntion = {
         addMarginBottom() {
-            $$('.container').forEach(e => {
+            $$('.container4').forEach(e => {
                 if (e.classList.length == 1) {
                     e.classList.add('mb-5')
                 }
@@ -57,6 +57,112 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.bai4-check').onclick = () => {
                 $('.bai4-result').innerHTML = 'Số lần xuất hiện là: ' + ($('#bai4-textarea').value.split($('.bai4-text').value).length - 1)
             }
+        },
+        bai5() {
+            function rotate() {
+                var image = document.querySelector('.bai5-img');
+                var angleInDegrees =
+                    Math.acos((new DOMMatrix(getComputedStyle(image).getPropertyValue('transform'))).a) * (180 / Math.PI);
+                if (angleInDegrees == 180)
+                    angleInDegrees = -15
+                image.style.transform = `rotate(${angleInDegrees + 15}deg)`
+            }
+
+            setInterval(rotate, 2000)
+        }, bai6() {
+            var forms = [$('#form'), $('#form-2'), $('#form-3')]
+
+            function check(form) {
+                var inputs = form.getElementsByTagName('input')
+                Array.from(inputs).forEach(e => {
+                    var child = document.createElement('span')
+                    child.textContent = 'Nhập nội dung bạn ơi'
+
+                    e.addEventListener("focus", function () {
+                        var v = e.value
+                        if (v === "" || v === undefined) {
+                            e.classList.add('check-input')
+                            if (!parent.contains(child)) {
+                                parent.appendChild(child)
+                            }
+                        } else {
+                            e.classList.remove('check-input') 
+                            if (parent.contains(child)) {
+                                parent.removeChild(child)
+                            }
+                        }
+                    });
+
+                    e.addEventListener("click", function () {
+                        var v = e.value
+                        var parent = e.parentNode
+                        if (v === "" || v === undefined) {
+                            e.classList.add('check-input')
+                            if (!parent.contains(child)) {
+                                parent.appendChild(child)
+                            }
+                        } else {
+                            e.classList.remove('check-input') 
+                            if (parent.contains(child)) {
+                                parent.removeChild(child)
+                            }
+                        }
+                    });
+
+                    e.addEventListener("change", function () {
+                        var v = e.value
+                        if (v === "" || v === undefined) {
+                            e.classList.add('check-input')
+                            if (!parent.contains(child)) {
+                                parent.appendChild(child)
+                            }
+                        } else {
+                            e.classList.remove('check-input') 
+                            if (parent.contains(child)) {
+                                parent.removeChild(child)
+                            }
+                        }
+                    });
+                    
+               })
+            }
+
+            forms.forEach(e => {
+                check(e)
+            })
+        }, 
+        bai7() {
+            var btns = $('.bai7-click')
+            var num = 1;
+            var btnss = [];
+
+            for (let i = 0; i < 64; i++) {
+                var btn = document.createElement('button')
+                btn.textContent = `button ${(i + 1)}`
+                btn.classList.add('btn4')
+                btn.name = `${(i + 1)}`
+                btn.classList.add('btn-primary')
+                btn.style.margin = '5px 10px'
+                btns.appendChild(btn)
+                btnss.push(btn)
+            }
+
+            btnss.forEach(e => {
+                e.onclick = () => {
+                    if (e.name == num) {
+                        e.classList.add('hidden')
+                        ++num
+                    } else {
+                        alert('Click sai thứ tự, click lại đi')
+                        btnss.forEach(e => {
+                            if (e.classList.contains('hidden')) {
+                                num = 1
+                                e.classList.remove('hidden')
+                            }
+                        })
+                    }
+                }
+            })
         }
     }
 
