@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+</head>
+
+<body>
+<div id="root">
+    <!-- Form 1 -->
+    <div class="container bg-gray">
+        <form action="../jsp/handel-form.jsp" id="form">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <h1 class="form-head">Contact Us</h1>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="name">FULL NAME *</label>
+                            <input type="text" name="name" placeholder="Enter Your Name" required="">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="d-g-2 col-2">
+                    <td>
+                        <div class="form-group">
+                            <label for="email">EMAIL *</label>
+                            <input type="email" name="email" placeholder="Enter Your Email" required="">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="form-group">
+                            <label for="phone">PHONE</label>
+                            <input type="number" name="phone" placeholder="Enter Your Phone">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="services">NEEDED SERVICES *</label>
+                            <select name="services">
+                                <option value="One">One</option>
+                                <option value="Two">Two</option>
+                                <option value="Three">Three</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="textarea">NEEDED SERVICES *</label>
+                            <textarea name="textarea" cols="30" rows="10"
+                                      placeholder="Your message here..."></textarea>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="submit btn" type="submit">Submit <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <!-- Form 2 -->
+    <div class="container">
+        <img src="http://127.0.0.1:5500/assests/img/background.jpg" alt="background" class="background">
+        <form action="../jsp/handel-form.jsp" id="form-2">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <h1 class="form-head">Sign In</h1>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="username or email">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <input type="password" placeholder="password">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="submit btn" type="submit">SIGN IN</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="nav-social">
+                            <p>Or login with</p>
+                            <div>
+                                <ul class="group-icon">
+                                    <li><a href="http://127.0.0.1:5500/"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="http://127.0.0.1:5500/"><i class="fa-brands fa-google"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="m-t m-b">
+                            <a href="#form-2">Sign Up</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <!-- Form 3 -->
+    <div class="container bg-gray">
+        <form action="../jsp/handel-form.jsp" id="form-3">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <h1>Account</h1>
+                    </th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="group-input">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="group-input">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email Adress">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="group-input">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <h1>Date of Birth</h1>
+                    </th>
+
+                    <th>
+                        <h1>Gender</h1>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="group-select">
+                            <button>DD</button>
+                            <button>MM</button>
+                            <button>YYYY</button>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="group-select">
+                            <button class="gender">Male</button>
+                            <button class="gender">Male</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <h1>Payment Details</h1>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="group-input special none">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <p>Creadit Card</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="group-input special none">
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <p>Paypal</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="group-input special card-number">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <input type="text" placeholder="Card Number">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="group-input special">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <input type="text" placeholder="Card CVC">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="group-input special none nope">
+                            <select>
+                                <option value="01 Jan">01 Jan</option>
+                            </select>
+                            <select>
+                                <option value="2015">2015</option>
+                            </select>
+                        </div>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>
+                        <h1>Terms and Conditions</h1>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="group-terms">
+                            <input type="checkbox">
+                            <p class="terms"> I accept the terms and conditions for signing up to this service,
+                                and hereby
+                                confirm
+                                I have read privacy policy.</p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+
+<style>
+    :root {
+        --color-gray: #ddd;
+        --color-brow: #A52A2A;
+        --color-brow-light: #FFF8DC;
+        --color-green: rgb(127, 255, 0);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .m-t {
+        margin-top: 50px;
+    }
+
+    .m-b {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid cyan;
+        border-radius: 3px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    li,
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        background-color: var(--color-gray);
+        border-bottom: 2px solid var(--color-brow);
+        border-left: 4px solid var(--color-brow);
+    }
+
+    [class*="item"] {
+        padding: 15px;
+    }
+
+    .menu-item {
+        position: relative;
+    }
+
+    .menu-item:hover {
+        background-color: var(--color-brow);
+        cursor: default;
+        border-left: 2px solid var(--color-brow-light);
+    }
+
+    .menu-item:hover .drop_menu {
+        display: block;
+        position: absolute;
+        top: 104%;
+        left: 0;
+    }
+
+    .drop_menu::before {
+        content: "";
+        display: block;
+        top: -5px;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+    }
+
+    .drop_menu {
+        display: none;
+        background-color: var(--color-gray);
+        width: max-content;
+        z-index: 10000;
+    }
+
+    .drop_menu-item:hover {
+        background-color: var(--color-brow-light);
+    }
+
+    .bg-gray {
+        background-color: var(--color-gray);
+    }
+
+    .form-head {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    [id^="form"] {
+        text-align: center;
+        background-color: white;
+        width: 90%;
+        max-width: 450px;
+        margin: auto;
+        border-radius: 4px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 20px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        border-radius: 4px;
+        background-color: var(--color-gray);
+        border: none;
+        position: relative;
+        width: 85%;
+    }
+
+    .form-group select {
+        width: 92%;
+    }
+
+    .form-group textarea {
+        background-color: white;
+        max-height: 100px;
+        border: 1px solid black;
+    }
+
+    .form-group label {
+        font-size: 10px;
+        position: absolute;
+        z-index: 2;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    /* display grid 2 column */
+    .d-g-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .table {
+        width: 100%;
+        margin: auto;
+    }
+
+    .table .form-group {
+        margin-bottom: 15px;
+    }
+
+    .col-2 input {
+        width: inherit;
+    }
+
+    .submit {
+        color: white;
+        background-color: black;
+        width: 93%;
+        margin-bottom: 40px;
+    }
+
+    .submit i {
+        color: white;
+    }
+
+    #form-2 {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        max-width: 400px;
+    }
+
+    #form-2 .form-group input {
+        width: 65%;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 3px 0 10px 5px var(--color-gray);
+    }
+
+    #form-2 .form-head {
+        margin-bottom: 30px;
+    }
+
+    .background {
+        width: 100%;
+        min-height: 1000px;
+        object-fit: cover;
+    }
+
+    #form-2 .submit {
+        width: 40%;
+        padding: 10px;
+        border-radius: 17px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 3px 0;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .nav-social {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .nav-social p {
+        color: var(--color-gray) !important;
+        padding-left: 5px;
+    }
+
+    .group-icon {
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .group-icon li {
+        width: max-content;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    .group-icon a {
+        box-shadow: 0 0 5px 3px var(--color-gray);
+        padding: 15px;
+        text-align: center;
+        border-radius: 50%;
+        width: auto;
+    }
+
+    .group-icon a i {
+        font-size: 20px;
+    }
+
+    .group-icon a i.fa-facebook-f {
+        padding: 2px;
+        padding-top: 0;
+    }
+
+    #form-3 {
+        text-align: left;
+        max-width: 300px;
+        padding: 20px 40px;
+    }
+
+    #form-3 h1 {
+        color: var(--color-green);
+        font-size: 14px;
+        margin: 20px 0;
+        width: max-content;
+    }
+
+    #form-3 input {
+        width: 100%;
+    }
+
+    .group-input {
+        display: flex;
+        margin-bottom: 10px;
+        background-color: var(--color-gray);
+        justify-content: baseline;
+        position: relative;
+    }
+
+    .group-input input,
+    .group-input i {
+        border: none;
+        background-color: var(--color-gray);
+        padding: 10px 0;
+    }
+
+    .group-input input:focus {
+        outline: none;
+    }
+
+    .group-input i {
+        padding: 12px 15px 0;
+        position: relative;
+        margin-right: 5px;
+    }
+
+    .group-input::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: black;
+        height: 80%;
+        width: 1px;
+        top: 10%;
+        left: 14%;
+        z-index: 4;
+    }
+
+    .group-select button {
+        padding: 10px;
+        padding-right: 15px;
+        margin-right: 5px;
+        border: 2px solid var(--color-gray);
+        border-radius: 2px;
+    }
+
+    .group-select {
+        display: flex;
+    }
+
+    .group-select .gender {
+        width: 50%;
+        display: inline;
+        margin-right: 0;
+    }
+
+    .group-select .gender:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+
+    .group-select .gender:nth-child(2) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .group-input.special::before {
+        left: 35%;
+    }
+
+    .group-input.special.none::before {
+        display: none;
+    }
+
+    .group-input.special.none input {
+        width: 50%;
+    }
+
+    .group-input.special.none {
+        text-align: center;
+        padding: 6px;
+    }
+
+    .group-input.special.none p {
+        padding-top: 5px;
+    }
+
+    .group-input.special.none i {
+        padding: 10px 0 10px 10px;
+    }
+
+    .group-input.special.nope {
+        background-color: white;
+        justify-content: space-between;
+    }
+
+    .group-input select {
+        padding: 8px;
+    }
+
+    .group-input select:first-child {
+        margin-right: 5px;
+    }
+
+    .terms {
+        color: var(--color-gray);
+        font-size: 12px;
+    }
+
+    .group-terms {
+        display: flex;
+    }
+
+    .group-terms input {
+        max-width: 6%;
+        margin-right: 10px;
+    }
+</style>
+</body>
+
+</html>
